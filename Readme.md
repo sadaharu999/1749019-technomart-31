@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Павел Князев](https://up.htmlacademy.ru/htmlcss/31/user/1749019).
-* Наставник: `Неизвестно`.
+* Наставник:[Михаил Кислый](https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
 
