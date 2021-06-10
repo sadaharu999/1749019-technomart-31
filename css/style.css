@@ -1,0 +1,308 @@
+:root {
+  --basic-grey: #293449;
+  --basic-greywhite: #32425C;
+  --basic-green: #63A63E;
+  --basic-red: #EE3643;
+  --basic-white: #FFFFFF;
+  --basic-greylight: #C5C5C5;
+  --basic-background: #F1F5F7;
+  --basic-black: #000000;
+  --special-yellow: #FFBF47;
+  --special-blue: #3BBCE3;
+  --special-lilac: #DC91D8;
+  --special-greenlight: #8ED78F;
+  --special-yellowlight: #FFD180;
+  --success: #5FBB2D;
+  --warning: #FFBF47;
+  --error: #BA2732;
+  --cuurent: #161D29;
+}
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-white);
+  text-decoration: none;
+}
+
+.main-header {
+  background: #F1F5F7;
+}
+
+.tabs-list {
+  list-style-type: none;
+  color: var(--basic-white);
+  background-color: #293449;
+}
+
+/*Убирает подчеркиванеи у всех ссылок на главной*/
+
+.tabs-list a, .site-navigation a {
+  text-decoration: none;
+  color: var(--basic-white);
+}
+
+.header-info {
+  list-style-type: none;
+}
+
+.header-info p {
+  color: var(--basic-red);
+}
+
+.address-phone {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--basic-red);
+}
+
+.address-street {
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.login-link, .regestration {
+  font-size: 21px;
+  line-height: 21px;
+  color: black;
+  text-decoration: none;
+}
+
+.site-navigation {
+  list-style: none;
+  background: var(--basic-greywhite);
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-red);
+}
+
+.tabs-list a:hover, .tabs-list a:focus {
+  background-color: #161D29;
+}
+
+.login-link:hover, .login-link:focus {
+  background-color: var(--basic-red);
+}
+
+.regestration:hover, .regestration:focus {
+  background-color: var(--basic-red);
+}
+
+.login-link:focus, .regestration:focus {
+  background-color: var(--basic-greylight);
+}
+
+.site-navigation a:hover, .site-navigation a:focus {
+  background-color: var(--basic-grey);
+}
+
+.main-header-logo:hover, .main-header-logo:focus {
+  background-color: var(--basic-grey);
+}
+
+.site-navigation a:active {
+  background-color: #1D2739;
+}
+
+.container {
+  background-color: var(--basic-white);
+}
+
+.promo-list, .promo-list a {
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  color: var(--basic-white);
+}
+
+.promo-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.promo-item a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.promo-item-1 {
+  background-color: var(--special-yellow);
+}
+
+.promo-item-2 {
+  background-color: var(--special-blue);
+}
+
+.promo-item-3 {
+  background-color: var(--special-lilac);
+}
+
+.promo-item-4 {
+  background-color: var(--special-greenlight);
+}
+
+.promo-item-5 {
+  background-color: var(--special-yellow);
+}
+
+.slider img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  border: none;
+  text-decoration: none;
+}
+
+.button:hover, .button:focus {
+  background-color: #CA2C37;
+}
+
+.button:hover, .button:active {
+  background-color: var(--error);
+}
+
+/*.button.disabled, .button:disabled {
+  cursor: default;
+  opacity: 0,5;
+  background-color: black;
+}*/
+
+.decor {
+  background-color: #F9F5F0;
+}
+
+.special-offers-list a {
+  text-decoration: none;
+}
+
+.special-offers h2, .brand-logo h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--basic-greywhite);
+  text-transform: uppercase;
+}
+
+.special-offers-list h3 {
+  font-family: "PTsans";
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--basic-black);
+  width: 700;
+}
+
+.special-offers-item p {
+  font-family: "PTsans";
+  font-size: 17px;
+  line-height: 18px;
+  color: #A9A9A9;
+  width: 700;
+  text-decoration-line: line-through;
+  text-transform: uppercase;
+}
+
+.service h3 {
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+/* Убрает булеты у списков*/
+
+.service-list, .about-us-list {
+  list-style-type: none;
+}
+
+.service p {
+  font: PT Sans;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+.decor-2 {
+  background: #F1F5F7;
+}
+
+.about-us h3, .contacts h3 {
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.about-us p, .contacts p {
+  font: PT Sans;
+  font-size: 13px;
+  font-weight: 24px;
+  color: var(--basic-black);
+}
+
+.about-us-item {
+  list-style-type: none;
+  color: var(--basic-black);
+}
+
+.decor-3 {
+  background: var(--basic-greywhite);
+}
+
+.decor-4 {
+  background: var(--basic-grey);
+}
+
+.social-list {
+  list-style-type: none;
+}
+
+.footer-site-navigation li, .footer-catalog-navigation li {
+  list-style-type: none;
+}
+
+.footer-site-navigation a {
+  text-decoration: none;
+  color: var(--basic-white);
+}
+
+.footer-catalog-navigation a {
+  text-decoration: none;
+  color: var(--special-yellowlight);
+}
+
+.license {
+  font-size: 16px;
+  font-weight: 18px;
+}
+
+.footer-address a {
+  text-decoration: none;
+  color: var(--basic-white);
+}
+
+.footer-feedback a, .footer-copyright a {
+  text-decoration: none;
+  color: var(--special-yellowlight);
+}
+
+.modal {
+  color: var(--basic-black);
+}
