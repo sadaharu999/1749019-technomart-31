@@ -9,6 +9,7 @@
   --basic-greylight: #C5C5C5;
   --basic-background: #F1F5F7;
   --basic-black: #000000;
+  --special-green: #518534;
   --special-yellow: #FFBF47;
   --special-blue: #3BBCE3;
   --special-lilac: #DC91D8;
@@ -20,6 +21,8 @@
   --cuurent: #161D29;
   --press: #1D2739;
   --aiming: #CA2C37;
+  --checkbox: #B5B5B5;
+  --border: #E5E5E5;
 }
 
 body {
@@ -31,6 +34,7 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: var(--basic-white);
+  background-color: var(--basic-white);
   text-decoration: none;
 }
 
@@ -91,26 +95,6 @@ body {
   background-color: var(--basic-red);
 }
 
-.tabs-list a:hover, 
-.tabs-list a:focus {
-  background-color: var(--cuurent);
-}
-
-.login-link:hover, 
-.login-link:focus {
-  background-color: var(--basic-red);
-}
-
-.registration:hover, 
-.registration:focus {
-  background-color: var(--basic-red);
-}
-
-.login-link:focus, 
-.regestration:focus {
-  background-color: var(--basic-greylight);
-}
-
 .site-navigation a:hover, 
 .site-navigation a:focus {
   background-color: var(--basic-grey);
@@ -125,15 +109,48 @@ body {
   background-color: var(--press);
 }
 
+
+.button-checkout {
+  background-color: var(--basic-green);
+}
+
+.button-checkout:hover,
+.button-checkout:focus {
+  background-color: var(--success);
+}
+
+.button-checkout:active {
+  opacity: 50%;
+}
+
+.main-header-logo:active,
+.tabs-list a:active {
+  background-color: var(--cuurent);
+  opacity: 50%;
+}
+
+.login-link:hover,
+.registration:hover {
+  color: var(--basic-red);
+}
+
+.login-link:active,
+.registration:active {
+  opacity: 50%;
+  color: var(--basic-black);
+}
+
 .container {
   background-color: var(--basic-white);
 }
 
-.promo-list, 
-.promo-list a {
+.promo-list {
   list-style: none;
-  text-decoration: none;
   text-align: center;
+}
+
+.promo-list a {
+  text-decoration: none;
   color: var(--basic-white);
 }
 
@@ -141,12 +158,6 @@ body {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
-}
-
-.promo-item a {
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
 }
 
 .promo-item-1 {
@@ -201,7 +212,7 @@ body {
   background-color: black;
 }*/
 
-.decor {
+.decor-brand {
   background-color: var(--basic-silverwhite);
 }
 
@@ -256,7 +267,7 @@ body {
   color: var(--basic-black);
 }
 
-.decor-2 {
+.decor-service {
   background: var(--basic-background);
 }
 
@@ -281,16 +292,279 @@ body {
   color: var(--basic-black);
 }
 
-.decor-3 {
-  background: var(--basic-greywhite);
+/* Начало каталога*/
+
+.user {
+  list-style: none;
 }
 
-.decor-4 {
-  background: var(--basic-grey);
+.user a {
+  text-decoration: none;
 }
+
+.user-icon a {
+  color: var(--basic-black);
+}
+
+.user p {
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.user-orders a,
+.user-personal-area a {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-greywhite);
+}
+
+.user-orders a:hover,
+.user-personal-area a:hover{
+  color: var(--basic-red);
+}
+
+.user-orders a:active,
+.user-personal-area a:active,
+.user-icon a:active {
+  color: var(--basic-greylight);
+}
+
+.page-title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-greywhite); 
+}
+
+.decor-page-title {
+  background-color: var(--basic-background);
+}
+
+.breadcrumbs {
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+.filters h3 {
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.filter legend {
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.filter ul {
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.filter-input-checkbox:hover {
+  color: var(--checkbox);
+}
+
+.sorting {
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.sorting ul {
+  list-style: none;
+}
+
+.sorting a {
+  color: var(--basic-black);
+  opacity: 30%;
+  text-decoration: none;
+  border-bottom: 1px dotted var(--basic-red);
+}
+
+.sorting-type:hover,
+.sorting-type:focus {
+  opacity: 100%;
+  color: var(--basic-black);
+  border-bottom: 1px solid var(--basic-red);
+}
+
+.sorting-type-active:active {
+  opacity: 100%;
+  border: 0;
+  color: var(--basic-red);
+}
+
+.catalog ul {
+  list-style: none;
+}
+
+.catalog-list p {
+  font-family: "PTsans", "Arial", "Helvetica", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: var(--basic-silver);
+  font-weight: 700;
+  text-decoration-line: line-through;
+  text-transform: uppercase;
+}
+
+.catalog-list a {
+  text-decoration: none;
+}
+
+.catalog-list h3 {
+  font-family: "PTsans", "Arial", "Helvetica", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  color: var(--basic-black);
+  list-style: none;
+}
+
+.button-bay,
+.button-bookmarks {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  background-color: var(--basic-green);
+  width: 135px;
+  height: 38px;
+  border: none;
+  border-radius: 2px;
+}
+
+.button-bookmarks {
+  color: var(--basic-greywhite);
+  background-color: var(--basic-white);
+  border: 3px solid var(--basic-green);
+}
+
+.button-bay:hover {
+  background-color: var(--success);
+}
+
+.button-bay:focus {
+  background-color: var(--special-green);
+}
+
+.button-bookmarks:hover {
+  border: 3px solid var(--basic-greywhite);
+}
+
+.button-bookmarks:focus,
+.button-bookmarks:active {
+  border: 3px solid var(--basic-greywhite);
+  background-color: var(--basic-white);
+  opacity: 50%;
+}
+
+.catalog-modal {
+  background-color: var(--basic-white);
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+}
+
+.price-button {
+  font-family: "PTsans", "Arial", "Helvetica", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pagination-list ul {
+  list-style: none;
+}
+
+.pagination-list a {
+  text-decoration: none;
+}
+
+.pagination-item a  {
+  font-family: "PTsans", "Arial", "Helvetica", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+
+.pagination-item a:active {
+  border: 1px solid var(--basic-red); 
+}
+
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  border: none;
+  border-radius: 1px;
+}
+
+.decor-presentation {
+  background-color: var(--basic-background);
+
+}
+
+.presentation h3{
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.presentation p {
+  font-family: "PTsans", "Arial", "Helvetica", sans-serif; 
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+/* конец каталога*/
 
 .social-list {
   list-style-type: none;
+}
+
+.decor-footer {
+  background: var(--basic-greywhite);
+}
+
+.decor-footer-down {
+  background: var(--basic-grey);
 }
 
 .footer-site-navigation, 
@@ -303,11 +577,28 @@ body {
   color: var(--basic-white);
 }
 
+.footer-site-navigation a:hover,
+.footer-catalog-navigation a:hover {
+  text-decoration-line: underline;
+}
+
+.footer-site-navigation a:active,
+.footer-catalog-navigation a:active {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
 .footer-catalog-navigation a {
   text-decoration: none;
   color: var(--special-yellowlight);
 }
 
+/* как правильно отрисовать круги?? через css, а иконки просто 
+вставить, или как то изображением??? 
+.social-button a:hover {
+  color: var(--basic-red);
+}
+ */
 .license {
   font-size: 16px;
   line-height: 18px;
@@ -322,6 +613,20 @@ body {
 .footer-copyright a {
   text-decoration: none;
   color: var(--special-yellowlight);
+}
+
+.footer-feedback p {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.footer-feedback a:hover {
+  text-decoration-line: underline;
+}
+
+.footer-feedback a:focus {
+  color: var(--basic-red);
+  text-decoration: none; 
 }
 
 .modal {
